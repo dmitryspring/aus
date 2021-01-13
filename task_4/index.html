@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Task #4</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            width:900px;
+            margin:30px auto;
+        }
+        .forms {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .form-item {
+            flex:0 0 50%;
+            width:50%;
+        }
+        .form-group {
+            margin:0 0 20px 0;
+        }
+        fieldset {
+            padding:20px;
+        }
+        label {
+            display: block;
+            margin:0 0 5px 0;
+        }
+        input[type="text"] {
+            display: block;
+            height:35px;
+            padding:0 10px;
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="forms">
+        <div class="form-item">
+            <form action="" method="POST" class="form" id="add" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Add your phone number</legend>
+                    <h3>Option 1. Add your phone number</h3>
+                    <div class="form-group">
+                        <label for="phone">Enter your PHONE:</label>
+                        <input type="text" name="phone" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Enter your E-MAIL:</label>
+                        <input type="text" name="email" id="email" required>
+                    </div>
+                    <p>
+                        You will be able to retrieve your phone
+                        number later using your e-mail.
+                    </p>
+                    <div class="form-group">
+                        <input type="submit">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="form-item">
+            <form action="" method="POST" class="form" id="retrieve" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Retrieve your phone number</legend>
+                    <h3>Option 2. Retrieve your phone number</h3>
+                    <div class="form-group">
+                        <label for="email-retrieve">Enter your E-MAIL:</label>
+                        <input type="text" name="email" id="email-retrieve" required>
+                    </div>
+                    <p>
+                        The phone number will be e-mailed to you.
+                    </p>
+                    <div class="form-group">
+                        <input type="submit">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>

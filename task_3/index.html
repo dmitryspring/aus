@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Task #3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        .wrapper {
+            width:900px;
+            margin: 30px auto;
+        }
+        .header,
+        .footer {
+            height:150px;
+            background: #eee;
+        }
+        .main {
+            margin:50px 0;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .block {
+            flex:0 0 48%;
+            width:48%;
+            max-width:48%;
+            background:#B3E5FC;
+        }
+        .block--a {height:400px;}
+        .block--b {height:220px;}
+
+        @media(max-width: 900px) {
+            .wrapper {
+                width:100%;
+                padding:0 2%;
+            }
+            .row {
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+            .block {
+                flex:0 0 auto;
+                width:100%;
+                max-width: 100%;
+                margin:0 0 30px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="main">
+            <div class="row">
+                <div class="block block--a"></div>
+                <div class="block block--b"></div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>
